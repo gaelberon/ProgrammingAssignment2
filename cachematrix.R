@@ -49,7 +49,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## the inverse matrix of the data and sets the value in the cache via the
 ## setsolve function.
 ## 
-## ## Here, we'll always consider the matrix to be inversible.
+## ## Here, we'll always consider the matrix to be invertible.
 ## ## If not, prior to the computation, we could perform the following checks:
 ## ## - is the matrix square or not?
 ## ## - is the matrix singular or not?
@@ -85,7 +85,7 @@ cacheSolve <- function(x, ...) {
         # to be inversed from cache into 'data'
         data <- x$get()
         
-        ## In our example, the matrix is supposed to be inversible. If not,
+        ## In our example, the matrix is supposed to be invertible. If not,
         ## we could perform the following tests:
         
         ## if(nrow(data) != ncol(data)) {
